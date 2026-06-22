@@ -509,33 +509,32 @@ img {
   opacity: 0.95;
 }
 
+/* PORTFOLIO PROFILE IMAGE SLOT — CIRCLE SHAPE */
 .about-profile-wrap {
   position: relative;
-  width: 100%;
+  width: 470px;
+  height: 470px;
   max-width: 470px;
-  height: 360px;
   margin-top: 78px;
   overflow: hidden;
-  border-radius: 0;
-  background: transparent;
+  border-radius: 50%;
+  background: #8f532d;
+  flex-shrink: 0;
+  box-shadow:
+    0 28px 70px rgba(0, 0, 0, 0.28),
+    0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
 .about-profile-wrap::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(90deg, rgba(0,0,0,0.18), transparent 52%),
-    linear-gradient(0deg, rgba(0,0,0,0.42), transparent 60%);
-  pointer-events: none;
+  display: none;
 }
 
 .about-profile {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-  border-radius: 0;
+  object-position: center center;
+  border-radius: 50%;
   background: transparent;
 }
 
@@ -2029,6 +2028,30 @@ img,
   line-height: 1.5 !important;
 }
 
+
+
+/* FINAL OVERRIDE — KEEP PORTFOLIO IMAGE SLOT PERFECT CIRCLE */
+.about-profile-wrap {
+  width: 470px !important;
+  height: 470px !important;
+  max-width: 470px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  background: #8f532d !important;
+}
+
+.about-profile-wrap::after {
+  display: none !important;
+}
+
+.about-profile {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 50% !important;
+}
+
 </style>
 </head>
 
@@ -2116,7 +2139,7 @@ img,
       <p class="about-title">Graphic Designer & Creative Visual Designer</p>
 
       <div class="about-profile-wrap">
-        <img class="zoom-img about-profile" src="profile.png" alt="Profile Picture" onerror="this.style.display='none';">
+        <img class="zoom-img about-profile" src="ppp.png" alt="Profile Picture" onerror="this.style.display='none';">
       </div>
     </div>
 
@@ -2390,7 +2413,7 @@ img,
 
 
 <section class="section flyers-section" id="flyers-design">
-  <img width="7680" height="4320" class="zoom-img flyer-hero" src="flyers cover.png" alt="Flyers Design Cover">
+  <img width="7680" height="4320" class="zoom-img flyer-hero" src="fkyer xcover.png" alt="Flyers Design Cover">
 
   <div class="flyers-content-row">
 
